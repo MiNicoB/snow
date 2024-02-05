@@ -1,5 +1,6 @@
 -- not finished
--- plan: create horizontal chain, begining with president and join into two columns 
+-- plan: create horizontal chain, begining with president and join into two columns
+-- need pruning at the point where horizontal tbl produces only nulls in a col; 
 
 use <snow_db_name>
 
@@ -18,7 +19,7 @@ create table #current_manager  (
 	current_manager varchar(40)
 )
 
-insert into #current_manager values('sys_id')-- presisend sys_id
+insert into #current_manager values('sys_id')-- company president sys_id
 
 select
 	manager
